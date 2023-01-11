@@ -1,4 +1,11 @@
-# 04-pokemon-game
+# Pokemon game
+Aplicación encargada de realizar una trivia en adivinar el pokemon correcto según la imagen que aparezca.<br>
+Codificado con Javascript y Vue, y testeado con pruebas unitarias a través de Jest
+
+### Link al proyecto montado
+```
+https://vue-pokemon-trivia-simple.netlify.app/
+```
 
 ## Project setup
 ```
