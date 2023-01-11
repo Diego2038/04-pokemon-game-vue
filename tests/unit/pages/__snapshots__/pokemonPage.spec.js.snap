@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonPage Component Debe de hacer match con el Snapshot cuando cargan todos los pokemones 1`] = `
+<div class="fade-in">
+  <h1>¿Quién es este Pokemon?</h1>
+  <pokemon-picture-stub pokemonid="3" showpokemon="false"></pokemon-picture-stub>
+  <pokemon-options-stub pokemonsarray="[object Object],[object Object],[object Object],[object Object]"></pokemon-options-stub><!-- OJO: Habías probado trasladar los datos por medio de una función, pero las promesas no se resolvían. En cambio, cuando los trasladabas con una data, tiene todo el tiempo del mundo para esperar y actualizarse, por lo tanto con ello sí se actualizaba de manera idónea-->
+  <!--v-if-->
+</div>
+`;
+
+exports[`PokemonPage Component Debe de hacer match con la snapshot 1`] = `
+<div>
+  <h1>Por favor espere...</h1>
+</div>
+`;
