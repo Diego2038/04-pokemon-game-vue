@@ -60,10 +60,10 @@ describe("PokemonOptions component", () => {
     // console.log(wrapper.emitted("selection")); // Nótese que retorna un arreglo de todos los parámetros que retorna el emit
     expect( wrapper.emitted('selection').length ).toBe(4)
 
-    expect( wrapper.emitted('selection')[0] ).toEqual( [{ name: 'bulbasaur', id: 1 }, 'dos', 'tres']) // OJO, agregué intencionalmente el componente 'dos' y 'tres' para "practicar" que la emisión de eventos se pueden agregar más de un parámetro (tantos como uno quiera)
-    expect( wrapper.emitted('selection')[1] ).toEqual( [{ name: 'ivysaur', id: 2 }, 'dos', 'tres'])
-    expect( wrapper.emitted('selection')[2] ).toEqual( [{ name: 'venusaur', id: 3 }, 'dos', 'tres'])
-    expect( wrapper.emitted('selection')[3] ).toEqual( [{ name: 'charmander', id: 4 }, 'dos', 'tres'])
+    expect( wrapper.emitted('selection')[0] ).toEqual( [{ pokemon: { name: 'bulbasaur', id: 1 }, dos: 'dos', tres: 'tres'}]) // OJO, agregué intencionalmente el componente 'dos' y 'tres' para "practicar" que la emisión de eventos se pueden agregar más de un parámetro (tantos como uno quiera)
+    expect( wrapper.emitted('selection')[1] ).toEqual( [{ pokemon: { name: 'ivysaur', id: 2 }, dos: 'dos', tres: 'tres'}])
+    expect( wrapper.emitted('selection')[2] ).toEqual( [{ pokemon: { name: 'venusaur', id: 3 }, dos: 'dos', tres: 'tres'}])
+    expect( wrapper.emitted('selection')[3] ).toEqual( [{ pokemon: { name: 'charmander', id: 4 }, dos: 'dos', tres: 'tres'}])
     
 
   });

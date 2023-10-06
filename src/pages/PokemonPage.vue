@@ -53,19 +53,19 @@ export default {
       this.pokemon = this.pokemonArr[ randInt ]
     },
 
-    checkAnswer(pokemonxD, otro, otroMas) { // pokemonxD es lo que retorna el evento, definido en el componente hijo (y en el primer parámetro si llegaras a ponerlo)
+    checkAnswer({pokemon}) { // pokemonxD es lo que retorna el evento, definido en el componente hijo (y en el primer parámetro si llegaras a ponerlo)
       // console.log('Pokemon page llamado', pokemonxD.name, pokemonxD.id)
-      // console.log( pokemonxD, otro, otroMas)
+      // console.log( pokemonxD, otro, otroMas) 
 
-      if( this.pokemon.id !== pokemonxD.id ){
+      if( this.pokemon.id !== pokemon.id ){
         this.message = 'No es el pokemon correcto'
       } else {
-        this.message = `Felicidades, acertaste, es ${pokemonxD.name}`
+        this.message = `Felicidades, acertaste, es ${pokemon.name}`
         this.showPokemon = true
       }
       this.showAnswer = true
 
-      console.log('visto', pokemonxD.name, this.showPokemon )
+      console.log('visto', pokemon.name, this.showPokemon )
     },
 
     async newGame () {

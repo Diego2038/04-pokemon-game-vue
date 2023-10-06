@@ -90,7 +90,7 @@ describe('PokemonPage Component', () => {
       }
     }) 
 
-    await wrapper.vm.checkAnswer( pokemons[2] ,'uno','dos')
+    await wrapper.vm.checkAnswer( {pokemon: pokemons[2] , uno: 'uno', dos: 'dos'} )
     // console.log( wrapper.html() )
 
     expect( wrapper.find('h3').exists()).toBeTruthy()
@@ -99,7 +99,7 @@ describe('PokemonPage Component', () => {
 
     expect( wrapper.find('h3').text()).toBe(`Felicidades, acertaste, es ${pokemons[2].name}`)
 
-    await wrapper.vm.checkAnswer( pokemons[0] )
+    await wrapper.vm.checkAnswer( {pokemon: pokemons[0]} )
 
     expect( wrapper.vm.message).toBe('No es el pokemon correcto')
 

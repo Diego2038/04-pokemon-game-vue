@@ -3,7 +3,7 @@
     <ul>
       <li v-for="pokemon in pokemonsArray" 
       :key="pokemon.id"
-      @click="$emit( 'selection', pokemon, 'dos', 'tres' )" > <!-- Puedes enviar más de un argumento -->
+      @click="$emit( 'selection', {pokemon, dos:'dos', tres:'tres'} )" > <!-- Puedes enviar más de un argumento -->
         {{pokemon.name}}
       </li>
     </ul>

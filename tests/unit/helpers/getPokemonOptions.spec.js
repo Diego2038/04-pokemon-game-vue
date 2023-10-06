@@ -15,7 +15,7 @@ describe('getPokemonOptions helpers', () => {
     const pokemons = await getPokemonsNames([1,2,3,4])
     // console.log( pokemons )
     expect( pokemons).toStrictEqual( [ // Para comparar objetos entre sí
-    // LEE LOS ERRORES, CARAJO
+    // ! LEE LOS ERRORES, CARAJO
       { name: 'bulbasaur', id: 1 },
       { name: 'ivysaur', id: 2 },
       { name: 'venusaur', id: 3 },
